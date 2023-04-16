@@ -4,34 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sign up</title>
   </head>
   <body>
-    <div class="container">
-        <div class="left-side">
-            <p>cat</p>
-            <!-- <img
+    <!-- <div class="container"> -->
+      <div class="left-side">
+        <img
               src="image/cat.jpg"
               alt="Cat with butterfly in nose"
               class="left-image"
-            /> -->
-            <!-- <div class="logo"> -->
-                <!-- <img src="image/logo.svg" alt="cat"> -->
-                <!-- <p><strong>C</strong>at <strong>K</strong>ingdom</p>
+            />
+        <div class="logo">
+        <!-- <img src="image/logo.svg" alt="cat"> -->
+        <p><strong>C</strong>at <strong>K</strong>ingdom</p>
             </div>
-            <p class="credit">Photo by <a href="https://unsplash.com/@_k_arinn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karina Vorozheeva</a> on <a href="https://unsplash.com/photos/rW-I87aPY5Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </p> -->
-        </div>
-      <div class="right-side">
-        <p>
-          This is not a real online service! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Necessitatibus, commodi! Sign up now to
-          get started.
-        </p>
-        <p>You know you want to.</p>
+            <p class="credit">Photo by <a href="https://unsplash.com/@_k_arinn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Karina Vorozheeva</a> on <a href="https://unsplash.com/photos/rW-I87aPY5Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+            </p>
       </div>
-    </div>
+      <div class="right-side">
+        <p class="start-prgph">
+          This is not a real online service! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Necessitatibus, commodi! <br> <em> Sign up now to
+          get started.</em>
+        </p>
+        <p class="second-prgph">You know you want to.</p>
+        <form action="#">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <div class="form-holder">
+
+              <div class="form-inline">
+                <label for="first-name"><strong>*</strong>FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Juan" required/>
+              </div>
+
+              <div class="form-inline">
+                <label for="last-name"><strong>*</strong>LAST NAME</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Dela Cruz" required/>
+              </div>
+             
+              <div class="form-inline">
+                <label for="email-add">EMAIL</label>
+                <input type="email" id="emai-add" name="email-add" placeholder="juandelacruz@email.com"/>
+              </div>
+              
+              <div class="form-inline">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="09123456789"/>
+              </div>
+
+              <div class="form-inline">
+                <label for="pass"><strong>*</strong>PASSWORD</label>
+                <input type="password" name="pass" id="pass" required/>
+              </div>
+
+             
+              <div class="form-inline">
+                <label for="confirm-pass"><strong>*</strong>CONFIRM PASSWORD</label>
+                <input type="password" name="confirm-pass" id="confirm-pass" required/>
+              </div>
+
+              
+            </div>
+            <button type="submit">Create Account</button>
+          </fieldset>
+        </form>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    <!-- </div> -->
   </body>
 </html>
